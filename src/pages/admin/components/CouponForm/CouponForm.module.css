@@ -1,0 +1,29 @@
+.form {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border: 1px solid #d1d9e6; /* Light Blue */
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #1f4f8f; /* Dull Blue */
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #1f4f8f; /* Dull Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #163d70; /* Darker Dull Blue */
+  }
+  
