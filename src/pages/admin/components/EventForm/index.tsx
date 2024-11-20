@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './EventForm.module.css';
-import { Event } from '../../../../../../api/src/models/models';
+import { Event } from '../../../../models/models';
 
 interface EventFormProps {
   onSubmit: (event: Event) => void;

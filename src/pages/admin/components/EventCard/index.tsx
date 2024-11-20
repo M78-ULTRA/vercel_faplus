@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './EventCard.module.css';
-import { Event } from '../../../../../../api/src/models/models';
+import { Event } from '../../../../models/models';
 
 interface EventCardProps {
   event: Event;

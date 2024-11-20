@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './CouponForm.module.css';
-import { Coupons } from '../../../../../../api/src/models/models';
+import { Coupons, Event } from '../../../../models/models';
 
 interface CouponFormProps {
   onSubmit: (coupon: Coupons) => void;
