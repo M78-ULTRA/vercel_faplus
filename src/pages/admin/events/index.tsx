@@ -14,6 +14,7 @@ const EventListPage: React.FC = () => {
         const data = await fetchEvents();
         setEvents(data);
       } catch (err) {
+        console.log('Error fetching events:', err); // Log the error for debugging
         setError('Failed to fetch events');
       }
     };
@@ -34,6 +35,7 @@ const EventListPage: React.FC = () => {
 };
 
 export default EventListPage;
+
 
 
 

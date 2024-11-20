@@ -9,6 +9,7 @@ const CreateCouponPage: React.FC = () => {
       await createCoupon(coupon);
       alert('Coupon created successfully!');
     } catch (error) {
+      console.log('Error creating coupon:', error); // Log the error for debugging
       alert('Failed to create coupon');
     }
   };
@@ -22,3 +23,4 @@ const CreateCouponPage: React.FC = () => {
 };
 
 export default CreateCouponPage;
+

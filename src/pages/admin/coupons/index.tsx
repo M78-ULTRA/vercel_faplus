@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Layout from '../components/Layout';  // Import Layout
+import Layout from '../components/Layout'; // Import Layout
 import { fetchCoupons } from '../../../utils/api';
 import { Coupons } from '../../../../../api/src/models/models';
 
@@ -13,6 +13,7 @@ const CouponListPage: React.FC = () => {
         const data = await fetchCoupons();
         setCoupons(data);
       } catch (err) {
+        console.log('Error fetching coupons:', err); // Log the error for debugging
         setError('Failed to fetch coupons');
       }
     };
@@ -20,7 +21,7 @@ const CouponListPage: React.FC = () => {
   }, []);
 
   return (
-    <Layout>  {/* Wrap page content with Layout */}
+    <Layout> {/* Wrap page content with Layout */}
       <h1>Coupons</h1>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <ul>
@@ -35,3 +36,4 @@ const CouponListPage: React.FC = () => {
 };
 
 export default CouponListPage;
+

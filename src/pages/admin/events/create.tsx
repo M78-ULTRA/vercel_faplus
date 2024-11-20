@@ -9,6 +9,7 @@ const CreateEventPage: React.FC = () => {
       await createEvent(event);
       alert('Event created successfully!');
     } catch (error) {
+      console.log('Error creating event:', error); // Log the error for debugging
       alert('Failed to create event');
     }
   };
@@ -22,3 +23,4 @@ const CreateEventPage: React.FC = () => {
 };
 
 export default CreateEventPage;
+
